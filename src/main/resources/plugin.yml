@@ -2,3 +2,8 @@ name: Staff-GUI
 version: '1.0-SNAPSHOT'
 main: org.eggstudios.staffGUI.StaffGUI
 api-version: '1.21'
+commands:
+    staffgui:
+        description: Opens the staff GUI for the specified player.
+        usage: /staff <player>
+        permission: staffgui.use
