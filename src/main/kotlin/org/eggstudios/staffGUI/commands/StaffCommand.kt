@@ -6,7 +6,7 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.command.TabCompleter
 import org.bukkit.entity.Player
-import org.eggstudios.staffGUI.StaffDialog
+import org.eggstudios.staffGUI.dialogs.StaffDialog
 
 class StaffCommand : CommandExecutor, TabCompleter {
     override fun onCommand(
