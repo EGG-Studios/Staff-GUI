@@ -16,7 +16,10 @@ class StaffGUI : JavaPlugin() {
     }
 
     fun registerCommand() {
-        this.getCommand("staffgui")?.setExecutor(staffCommand)
-        logger.info("Command has been registered.")
+        getCommand("staff")?.apply {
+            setExecutor(staffCommand)
+            tabCompleter = staffCommand
+        }
+        logger.info("Command has been registered!")
     }
 }
